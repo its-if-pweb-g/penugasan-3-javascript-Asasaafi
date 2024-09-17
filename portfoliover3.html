@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>asaworks | Lailatul Annisa Fitriana Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <style>
+        .navbar-brand img{
+            height: 40px;
+            padding-left: auto;
+        }
+        .navbar {
+            padding: 0;
+        }
+        .navbar-nav li {
+            padding: 0 10px;
+        }
+        .navbar-nav li a {
+            color:black;
+            font-weight: 600;
+        }
+        .nav-link {
+        color: black; 
+        font-weight: 600; 
+        text-decoration: none; 
+        padding: 8px 16px; 
+        transition: color 0.3s ease; 
+        font-family: 'Chivo', sans-serif;
+        }
+        .nav-link:hover {
+        color: #7210ce; 
+        text-decoration: underline;
+        }
+        .nav-link.active {
+        color: #7210ce; 
+        font-weight: bold; 
+        }
+
+        #Home {
+            background-color: transparent;
+            background-image:  linear-gradient(0deg, rgba(255,230,195,1) 0%, rgba(100,97,222,1) 93%);
+            color: white;
+            padding-top: 5%;
+        }
+        .promo-title {
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 100px;
+        }
+        #Home a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #biodata {
+            background-color: white;
+            padding-top: 5%;
+        }
+        .about-me {
+            font-size: 80px;
+            font-weight: 600;
+            margin-top: 100px;
+        }
+
+        #Education {
+            background-color: white;
+            padding: 80px 0;
+        }
+        .eduaction-img {
+            width: 100px;
+            margin-top: 20px;
+        }
+        .education {
+            padding: 20px;
+        }
+        .title::before {
+            content: '';
+            background: #7210ce;
+            height: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transform: translateY(63px);
+        }
+        .title::after {
+            content: '';
+            background: #7210ce;
+            height: 10px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            display: block;
+            transform: translateY(8px);
+        }
+
+        #Hobbies {
+            margin: 100px 0;
+        }
+        .Hobbies {
+            border-left: 4px solid #7210ce;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .Hobbies img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        .foto-details {
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        #card {
+            margin: 100px 0;
+        }
+        .card {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .card-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .card-img-top {
+            height: 250px;
+            width: 200px;
+            align-items: center;
+        }
+
+        #social-media {
+            background: white;
+            padding: 100px 0;
+        }
+
+        #social-media p {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .social-icons img {
+            width: 60px;
+            transition: 0.5s;
+        }
+        .social-icons a:hover img {
+
+            transform: translateY(-10px);
+        }
+
+        #contact {
+            font-family: 'Chivo', sans-serif;
+            background-color: #fbfbff;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0; 
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            padding: 20px;
+            background-color: #16213e;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+        .input-box, .textarea-field {
+            margin-bottom: 15px;
+        }
+        .input-field, .textarea-field {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #0f3460;
+            border-radius: 5px;
+            background-color: #0f3460;
+            color: #fff;
+            font-size: 16px;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #aaa;
+        }
+        .error-text {
+            color: #ff4c4c;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+        button {
+            padding: 10px;
+            background-color: #00bcd4;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #008c9e;
+        }
+        </style>
+    </head>
+
+    <body style="background:white; ">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6s4RWcss8JkfyxXolFYkXsd37tchpIlh/J58rs74bBjgk3aCNIxWdiByyKBI" crossorigin="anonymous"></script>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="pic/LOGO.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a style="font-family: 'Chivo', sans-serif;" class="nav-link active" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Chivo', sans-serif;" class="nav-link" href="#AboutMe">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Chivo', sans-serif;" class="nav-link" href="#Education">Education Background</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Chivo', sans-serif;" class="nav-link" href="#Hobbies">Hobbies And Interest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Chivo', sans-serif;" class="nav-link" href="#RecomendMovies">Recommend Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Chivo', sans-serif;" class="nav-link" href="#social-media">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>                 
+
+        </section>
+        <section id="Home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="promo-title">Lailatul Annisa Fitriana</p>
+                        <p>5025231202</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="pic/Duckk.png" class="img-fluid" style="width: 350px;">
+                    </div>
+                </div>
+            </div>
+            <img src="pic/wave1.png" class="bottom-img">
+        </section>
+         
+        <section id="AboutMe" style="background: white";>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                    <p style="font-size: large; font-family: 'Rubik', sans-serif;" class="promo-title"><b>About Me</b></p>
+                    <p style="text-align: justify;">I am a creative individual with a passion for drawing and a deep appreciation for listening to others. 
+                    Though I identify as an introvert, I continually seek to explore and expand my horizons across various fields. 
+                    Currently, I am a dedicated student, balancing my academic pursuits with my personal interests and growth. 
+                    My introspective nature allows me to connect deeply with others, while my curiosity drives me to learn and experience new things.
+                    </p> 
+                    </div>
+                    <div class="col-md-6 text-center">
+                    <img src="pic/Me.jpg" class="img-fluid" width="200px">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Education" style="background: white";>
+            <div class="container text-center">
+            <h1 style="font-family: 'Rubik', sans-serif;" class="title">Education Background</h1>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="pic/SDIT.jpg" class="eduaction-img">
+                        <h4>SDIT Ash-Shohwah</h4>
+                        <p>Elementary School</p>
+                        <p>City        : Berau</p>
+                        <p>Start Year  : 2011</p>
+                        <p>End Year    : 2017</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="pic/SMPIT.png" class="eduaction-img">
+                        <h4>SMPIT Ash-Shohwah</h4>
+                        <p>Middle School</p>
+                        <p>City        : Berau</p>
+                        <p>Start Year  : 2017</p>
+                        <p>End Year    : 2020</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="pic/SMAN1.png" class="eduaction-img">
+                        <h4>SMAN 1 Berau</h4>
+                        <p>High School</p>
+                        <p>City        : Berau</p>
+                        <p>Start Year  : 2020</p>
+                        <p>End Year    : 2023</p>
+                    </div>
+                    <div class="col-center">
+                        <img src="pic/ITS.png" class="eduaction-img">
+                        <h4>Sepuluh Nopember Institute of Technology</h4>
+                        <p>University</p>
+                        <p>City        : Surabaya</p>
+                        <p>Start Year  : 2023</p>
+                        <p>Expected Graduation Year    : 2027</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Hobbies" style="background: white;">
+            <div class="container">
+                <h1 style="font-family: 'Rubik', sans-serif;" class="title text-center">Hobbies And interest</h1>
+                <div class="row">
+                    <div class="col-md-5 Hobbies">
+                        <p style="text-align: justify;">
+                        Reading books is a cherished hobby of mine, as it offers a gateway to new worlds and ideas. 
+                        I enjoy delving into various genres, from classic literature to contemporary fiction and non-fiction. 
+                        Each book provides a unique journey, expanding my knowledge and enhancing my analytical skills. 
+                        Through reading, I continuously engage with different viewpoints and develop a deeper understanding of the human experience.
+                        </p>
+                        <img src="pic/bookcat.jpg">
+                        <p class="foto-details"><b>Reading</b></p>
+                    </div>
+                    <div class="col-md-5 Hobbies">
+                        <p style="text-align: justify;">
+                        I have a deep passion for watching films, which provides me with endless enjoyment and relaxation. 
+                        Whether it’s a captivating drama, a thought-provoking documentary, or a light-hearted comedy, I appreciate the diverse narratives and cinematic styles that films offer. 
+                        This hobby allows me to unwind and immerse myself in entertaining stories, enriching my leisure time with pleasure and delight.
+                        </p>
+                        <img src="pic/Netflix.jpg">
+                        <p class="foto-details"><b>watching</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="RecomendMovies">
+            <h1 style="font-family: 'Rubik', sans-serif;" class="title text-center">Recomend Movies</h1>
+            <div class="card-group">
+                <div class="card mx-auto">
+                  <img src="pic/Everything Everywhere All at Once.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Everything Everywhere All at Once</h5>
+                    <p style="text-align: justify" class="card-text">I love Everything Everywhere All at Once because it's a film that blend of action, comedy, and drama, exploring the multiverse in a fresh, emotionally resonant way that touches on identity, family, and life's endless possibilities. Its creative visuals and unpredictable narrative make it both thought-provoking and entertaining.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">10/10</small>
+                  </div>
+                </div>
+                <div class="card mx-auto">
+                  <img src="pic/3 Body Problem.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">3 Body Problem</h5>
+                    <p style="text-align: justify" class="card-text">The Three-Body Problem contain with its bold exploration of science, philosophy, and humanity's future. Despite the intricate scientific details, the series challenges readers to rethink the universe and intertwines hard science with profound ethical and existential questions, making it unforgettable.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">8.5/10</small>
+                  </div>
+                </div>
+                <div class="card mx-auto">
+                  <img src="pic/Violet Evergarden.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Violet Evergarden</h5>
+                    <p style="text-align: justify" class="card-text">Violet Evergarden is an anime that deeply resonates with me due to its exquisite storytelling, emotional depth, and stunning animation. The journey of Violet, a former soldier learning to understand emotions, beautifully explores grief, love, and healing, while highlighting the power of words to express difficult feelings.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">8/10</small>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section id="social-media">
+            <div class="container text-center">
+                <p> Find Me On Social Media</p>
+                <div class="social-icons">
+                <a href="www.linkedin.com/in/lailatulannisa"><img src="pic/LinkedIn.png"></a>
+                <a href="https://www.instagram.com/annfit12?igsh=MXBzZmd1YjEwN2V4eQ=="><img src="pic/instagram.png"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 style="color: #fbfbff;">Contact Me!</h2>
+            <form id="contact-form">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                        <div class="error-text" id="name-error">Full Name can't be blank</div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                        <div class="error-text" id="email-error">Email Address can't be blank</div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                        <div class="error-text" id="phone-error">Phone Number can't be blank</div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                        <div class="error-text" id="subject-error">Subject can't be blank</div>
+                    </div>
+                </div>
+                <div class="textarea-field field">
+                    <textarea id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                    <div class="error-text" id="message-error">Message can't be blank</div>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-status"></p>
+        </section>
+        
+        <section id="persistent-text-field">
+            <div class="container">
+                <h2 style="font-family: 'Chivo', sans-serif" class="title text-center">Interactive Text Field</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="userInput" style="font-size: large;">Type something here:</label>
+                        <input type="text" id="userInput" class="form-control" placeholder="Enter text">
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Live Update:</h6>
+                        <p id="displayText" style="border: 1px solid #7210ce; padding: 10px;"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="script.js"></script> 
+        
+        <script>
+            // Ambil elemen
+            const userInput = document.getElementById('userInput');
+            const displayText = document.getElementById('displayText');
+        
+            // Cek apakah ada data yang tersimpan di localStorage
+            const savedText = localStorage.getItem('persistentText');
+            if (savedText) {
+                displayText.textContent = savedText;
+                userInput.value = savedText;
+            }
+        
+            // Event listener untuk mengupdate teks saat pengguna mengetik
+            userInput.addEventListener('input', function () {
+                const currentText = userInput.value;
+                displayText.textContent = currentText;
+        
+                // Simpan teks di localStorage
+                localStorage.setItem('persistentText', currentText);
+            });
+        </script>
+        
+        <style>
+        #persistent-text-field {
+            background-color: #f0f0f5; 
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+       #persistent-text-field h2 {
+            color: #3a3a3a;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }     
+       .col-md-6 {
+            width: 45%;
+        }
+        label {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+        }
+        #userInput {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #7210ce;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        #displayText {
+            min-height: 50px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .col-md-6 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        </style>
+
+    </body>
+</html>
